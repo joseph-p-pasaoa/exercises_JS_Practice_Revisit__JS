@@ -249,7 +249,6 @@ function largest (array) {
 
 /*
 
-16. `targetIndices` - a function that takes in array of numbers and a target. Return the indices as an array of the pair of elements that add up to that target.
 
 20. `secondLargest` - a function that returns the second largest value in an array.
 
@@ -267,4 +266,47 @@ function largest (array) {
 
 27. `myRotate` - a function that takes in an array and a shift number. The array should be rotated by that shift number. The shift should default to zero.
 
+``` js
+myRotate([1, 2, 3]) // => [2, 3, 1]
+myRotate([1, 2, 3], -1) // => [3, 1, 2]
+
+```
+
+28. `repeat` - a function that takes in a string and numberOfTimes. The function should log to the screen the string however many times as numberOfTimes. If the user does not enter a numberOfTimes it should default to 2.
+
+29. `noDups` - a function that takes in an array and returns an array with no duplicate elements.
+
+30. `concatAndRemoveDupes` - a function that takes in two arrays and returns one array with no duplicates elements.
+
+31. `elementDivisibleBy` - a function that takes in a divisor and arr. Use filter to return a new array of every element of arr that can be evenly divided by divisor.
+
+32. `numberTimesIdx` - a function that takes in an array and returns an array with each element multiplied by it's index.
+
+33. `Array.prototype.myFlatten` - a function on the Array class that takes a multi dimensional array and returns it as one array.
+
+34.  `Array.prototype.myForEach` - your own forEach
+
+35. `Array.prototype.myMap` - your own map.
+
+36. `Array.prototype.myReduce` - your own reduce.
+
+37. `Array.prototype.myEvery` - your own every.
+
+38. `Array.prototype.mySome` - your own some.
+
+39. `Array.prototype.myFilter` - your own filter.
+
+40. `Array.prototype.myTranspose` - transpose a matrix.
+
+41. `Array.prototype.myJoin` - your own join.
+
+42. `String.prototype.mySlice` - your own slice.
+
+
+*/
+
+
+
+/* ???
+16. `targetIndices` - a function that takes in array of numbers and a target. Return the indices as an array of the pair of elements that add up to that target.
 */
