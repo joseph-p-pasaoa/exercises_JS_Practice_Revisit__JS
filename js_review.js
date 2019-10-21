@@ -212,28 +212,44 @@ function disemvowel (str) {
     u: true
   };
   let output = str.split('').filter(char => {
-    return !vowels[char.toLowerCase()];
+      return !vowels[char.toLowerCase()];
   }).join('');
   return output;
 }
 
+// 17 //
+// `rangeWithStep` - a function that takes three number variables: min, max and step. The block will log 
+// an array with all the numbers, inclusive, between min and max, , going up in increments equal to step. 
+// If no step value is provided, the increment will be 1.
+function rangeWithStep (min, max, step) {
+  let outputArr = [];
+  for (let i = min; i <= max; i += step || 1) {
+    outputArr.push(i);
+  }
+  return outputArr;
+}
+
+// 18 //
+// `doubler` - a function that doubles each element in an array.
+function doubler (array) {
+  let outputArr = array.map(num => num * 2);
+  return outputArr;
+}
+
+// 19 //
+// `largest` - a function that returns the largest number in an array.
+function largest (array) {
+  return array.reduce((largest, curr) => {
+    if (curr > largest) {
+      return curr;
+    }
+    return largest;
+  }
+}
+
 /*
 
-
-
-13. 
-
-14. 
-
-15. 
-
 16. `targetIndices` - a function that takes in array of numbers and a target. Return the indices as an array of the pair of elements that add up to that target.
-
-17. `rangeWithStep` - a function that takes three number variables: min, max and step. The block will log an array with all the numbers, inclusive, between min and max, , going up in increments equal to step. If no step value is provided, the increment will be 1.
-
-18. `doubler` - a function that doubles each element in an array.
-
-19. `largest` - a function that returns the largest number in an array.
 
 20. `secondLargest` - a function that returns the second largest value in an array.
 
