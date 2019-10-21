@@ -247,22 +247,52 @@ function largest (array) {
   }
 }
 
+// 20 //
+// `secondLargest` - a function that returns the second largest value in an array.
+function secondLargest (array) {
+  let twoBigsEtAl = [array[0]];
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] > twoBigsEtAl[0]) {
+      twoBigsEtAl.unshift(array[i]);
+    } else if (array[i] > twoBigsEtAl[1]) {
+      twoBigsEtAl[1] = array[i];
+    }
+  }
+  return twoBigsEtAl[1];  
+}
+
+// 22 //
+// `sum` - a function that returns the sum of all numbers.
+function sum (array) {
+  return array.reduce(sum, curr => sum + curr);
+}
+
+// 23 //
+// `product` - a function that returns the product of all numbers.
+function product (array) {
+  return array.reduce(product, curr => product * curr);
+}
+
+// 24 //
+// `getProps` - a function that takes in an object and returns the keys.
+function getProps (obj) {
+  return Object.keys(obj);
+}
+
+// 25 //
+// `getValues` - a function that takes in an object and returns the values.
+function getValues (obj) {
+  return Object.values(obj);
+}
+
+// 26 //
+// `getAverageAge` - a function that takes in an array of people objects. It should return the average age of all the objects.
+function getAverageAge (array) {
+  return array.reduce(sum, currAge => sum + age) / array.length;
+}
+
 /*
-
-
-20. `secondLargest` - a function that returns the second largest value in an array.
-
 21. `factors` - a function that returns the factors of a number in ascending order.
-
-22. `sum` - a function that returns the sum of all numbers.
-
-23. `product` - a function that returns the product of all numbers.
-
-24. `getProps` - a function that takes in an object and returns the keys .
-
-25. `getValues` - a function that takes in an object and returns the values.
-
-26. `getAverageAge` - a function that takes in an array of people objects. It should return the average age of all the objects.
 
 27. `myRotate` - a function that takes in an array and a shift number. The array should be rotated by that shift number. The shift should default to zero.
 
