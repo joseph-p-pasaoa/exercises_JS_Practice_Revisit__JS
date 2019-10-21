@@ -200,6 +200,23 @@ function getMiddle (str) {
 // 14 //
 // `palindromeSubstrings` - a function that takes in a string and returns an array of all the palindrome substrings.
 
+
+// 15 //
+// `disemvowel` - a function that removes all the vowels from a string.
+function disemvowel (str) {
+  const vowels = {
+    a: true,
+    e: true,
+    i: true,
+    o: true,
+    u: true
+  };
+  let output = str.split('').filter(char => {
+    return !vowels[char.toLowerCase()];
+  }).join('');
+  return output;
+}
+
 /*
 
 
@@ -208,7 +225,7 @@ function getMiddle (str) {
 
 14. 
 
-15. `disemvowel` - a function that removes all the vowels from a string.
+15. 
 
 16. `targetIndices` - a function that takes in array of numbers and a target. Return the indices as an array of the pair of elements that add up to that target.
 
