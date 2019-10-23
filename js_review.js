@@ -339,6 +339,11 @@ function elementDivisibleBy (divisor, array) {
   });
 }
 
+// 32 //
+// `numberTimesIdx` - a function that takes in an array and returns an array with each element multiplied by it's index.
+function numberTimesIdx (array) {
+  return array.map((num, i) => num * i);
+}
 
 /*
 21. `factors` - a function that returns the factors of a number in ascending order.
@@ -347,7 +352,7 @@ function elementDivisibleBy (divisor, array) {
 
 
 
-32. `numberTimesIdx` - a function that takes in an array and returns an array with each element multiplied by it's index.
+32. 
 
 33. `Array.prototype.myFlatten` - a function on the Array class that takes a multi dimensional array and returns it as one array.
 
