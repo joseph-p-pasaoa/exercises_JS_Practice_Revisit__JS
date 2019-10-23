@@ -291,20 +291,28 @@ function getAverageAge (array) {
   return array.reduce(sum, currAge => sum + age) / array.length;
 }
 
+// 28 //
+// `repeat` - a function that takes in a string and numberOfTimes. The function should log to the screen the string however 
+// many times as numberOfTimes. If the user does not enter a numberOfTimes it should default to 2.
+function repeat (str, num) {
+  for (let i = 0; i < num || 2; i++) {
+    log(str;)
+  }
+}
+
+// 29 //
+// `noDups` - a function that takes in an array and returns an array with no duplicate elements.
+
+
+
 /*
 21. `factors` - a function that returns the factors of a number in ascending order.
 
-27. `myRotate` - a function that takes in an array and a shift number. The array should be rotated by that shift number. The shift should default to zero.
 
-``` js
-myRotate([1, 2, 3]) // => [2, 3, 1]
-myRotate([1, 2, 3], -1) // => [3, 1, 2]
 
-```
+28. 
 
-28. `repeat` - a function that takes in a string and numberOfTimes. The function should log to the screen the string however many times as numberOfTimes. If the user does not enter a numberOfTimes it should default to 2.
-
-29. `noDups` - a function that takes in an array and returns an array with no duplicate elements.
+29. 
 
 30. `concatAndRemoveDupes` - a function that takes in two arrays and returns one array with no duplicates elements.
 
@@ -339,4 +347,13 @@ myRotate([1, 2, 3], -1) // => [3, 1, 2]
 
 /* ???
 16. `targetIndices` - a function that takes in array of numbers and a target. Return the indices as an array of the pair of elements that add up to that target.
+
+27. `myRotate` - a function that takes in an array and a shift number. The array should be rotated by that shift number. The shift should default to zero.
+
+``` js
+myRotate([1, 2, 3]) // => [2, 3, 1]
+myRotate([1, 2, 3], -1) // => [3, 1, 2]
+
+```
+
 */
