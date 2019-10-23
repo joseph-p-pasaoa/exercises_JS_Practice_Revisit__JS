@@ -330,19 +330,22 @@ function concatAndRemoveDupes (array1, array2) {
   return output;
 }
 
+// 31 //
+// `elementDivisibleBy` - a function that takes in a divisor and arr. Use filter to return a new array of every element 
+// of arr that can be evenly divided by divisor.
+function elementDivisibleBy (divisor, array) {
+  return array.filter(el => {
+      return ParseFloat(el) % divisor === 0;
+  });
+}
+
 
 /*
 21. `factors` - a function that returns the factors of a number in ascending order.
 
 
 
-28. 
 
-29. 
-
-30. 
-
-31. `elementDivisibleBy` - a function that takes in a divisor and arr. Use filter to return a new array of every element of arr that can be evenly divided by divisor.
 
 32. `numberTimesIdx` - a function that takes in an array and returns an array with each element multiplied by it's index.
 
