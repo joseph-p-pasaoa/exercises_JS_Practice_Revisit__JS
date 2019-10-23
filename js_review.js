@@ -314,6 +314,22 @@ function noDups (array) {
   return output;
 }
 
+// 30 //
+// `concatAndRemoveDupes` - a function that takes in two arrays and returns one array with no duplicates elements.
+function concatAndRemoveDupes (array1, array2) {
+  const trackerObj = {};
+  const output = [];
+  for (let i = 1; i <= 2; i++) {
+    for (let el of eval('array' + i)) {
+      if (!trackerObj[el]) {
+        trackerObj[el] = true;
+        output.push(el);
+      }
+    }
+  }
+  return output;
+}
+
 
 /*
 21. `factors` - a function that returns the factors of a number in ascending order.
@@ -324,7 +340,7 @@ function noDups (array) {
 
 29. 
 
-30. `concatAndRemoveDupes` - a function that takes in two arrays and returns one array with no duplicates elements.
+30. 
 
 31. `elementDivisibleBy` - a function that takes in a divisor and arr. Use filter to return a new array of every element of arr that can be evenly divided by divisor.
 
