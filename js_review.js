@@ -302,7 +302,17 @@ function repeat (str, num) {
 
 // 29 //
 // `noDups` - a function that takes in an array and returns an array with no duplicate elements.
-
+function noDups (array) {
+  const trackerObj = {};
+  const output = [];
+  for (let el of array) {
+    if (!trackerObj[el]) {
+      trackerObj[el] = true;
+      output.push(el);
+    }
+  }
+  return output;
+}
 
 
 /*
