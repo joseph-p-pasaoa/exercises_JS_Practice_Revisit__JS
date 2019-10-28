@@ -35,11 +35,11 @@ function printAGrade (input) {
     return 'A';
   } else if (num >= 80) {
     return 'B';
-  }} else if (num >= 70) {
+  } else if (num >= 70) {
     return 'C';
-  }} else if (num >= 60) {
+  } else if (num >= 60) {
     return 'D';
-  }} else {
+  } else {
     return 'F';
   }
 }
@@ -345,16 +345,25 @@ function numberTimesIdx (array) {
   return array.map((num, i) => num * i);
 }
 
+// 33 //
+// a function on the Array class that takes a multi dimensional array and returns it as one array.
+Object.defineProperty(Array.prototype, 'myFlatten', {
+  value: function() {
+    const output = [];
+    for (let el of this) {
+      if (Array.isArray(el)) {
+        return myFlatten(el);
+      } else {
+        output.push(el);
+      }
+    }
+    return output;
+  }
+});
+
+
 /*
 21. `factors` - a function that returns the factors of a number in ascending order.
-
-
-
-
-
-32. 
-
-33. `Array.prototype.myFlatten` - a function on the Array class that takes a multi dimensional array and returns it as one array.
 
 34.  `Array.prototype.myForEach` - your own forEach
 
